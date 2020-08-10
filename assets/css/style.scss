@@ -152,4 +152,12 @@ only screen and (max-width: 760px),
         padding-top: 100px;
         padding-bottom: 30px;
     }
-  }
+}
+
+@media
+only screen and (max-width: 680px),
+(min-device-width: 500px) and (max-device-width: 680px) {
+    .intro {
+        padding-top: 390px;
+    }
+}
