@@ -17,11 +17,11 @@ bodyClass: page-contact
   <div class="row">
     <div class="col-12 col-md-8">
       <ul>
-        <li><strong>Phone: </strong>{{ site.data.contact.phone }}</li>
-        <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
+        <li><i class="fas fa-phone-alt"></i> <strong>Phone: </strong>{{ site.data.contact.phone }}</li>
+        <li><i class="far fa-envelope"></i> <strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
             {{ site.data.contact.email }}</a></li>
         {% if site.data.contact.address %}
-        <li><strong>Address: </strong>{{ site.data.contact.address }}</li>
+        <li><i class="fas fa-map-marker-alt"></i> <strong>Address: </strong>{{ site.data.contact.address }}</li>
         {% endif %}
       </ul>
       <h4 class="mt-4">Business Hours</h4>
