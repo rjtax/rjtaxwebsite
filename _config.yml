@@ -1,7 +1,7 @@
 baseurl: ''
 exclude: ['README.md']
 permalink: pretty
-title: 'RjTax'
+title: 'RJ Tax'
 
 collections:
   services:
