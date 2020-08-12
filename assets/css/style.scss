@@ -99,8 +99,18 @@
 //   }
 // }
 
+html{
+    scroll-behavior: smooth;
+}
+
 ul{
     list-style-type: none;
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+.header {
+    height: 60px;
 }
 
 .page-home .call svg {
@@ -125,25 +135,182 @@ ul{
 .logo a {
     text-decoration: none;
     font-family: "Lora", "Helvetica Neue", Arial, sans-serif, -apple-system;
-    color: #45454a;
+    color: #45454a;    
+    font-size: 35px;
 }
 
 .logo a h1 {
     font-size: 35px;
+    margin: 0;
 }
 
-.logo a h1 span {
+.logo-title-rj {
+    border: 1px solid #1c3ed3;
+    background-color: #1c3ed3;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 0px 4px;
+}
+
+.logo-title-tax {
     color: #1c3ed3;
-    font-size: 35px;
 }
 
-// .intro {
-//     padding-top: 275px;
+.main-menu ul li a {
+    padding: 15px;;
+}
+
+.address-img{
+    width: 3%;
+}
+
+.footer ul{
+    line-height: normal;
+}
+
+.footer ul li.copyright {
+    // font-weight: bold;
+    color: #ffffff;
+    display: inline-block;
+    height: 40px;
+    padding: 10px 8px 10px 8px;
+    font-family: "Lora", "Helvetica Neue", Arial, sans-serif, -apple-system;
+}
+
+.footer .footer-title {
+    min-width: 70px;
+    width: 100%;
+}
+
+.footer h3 {
+    margin-bottom: 0;
+    color: #ffffff;
+    font-family: "Lora", "Helvetica Neue", Arial, sans-serif, -apple-system;
+    font-size: 1.5rem;
+}
+
+.footer-logo-title-rj {
+    border-radius: 5px;
+    padding: 0px 4px;
+    // color: #ffffff;
+    // border: 1px solid #1c3ed3;
+    // background-color: #1c3ed3;
+    color: #414156;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+}
+
+.sub-footer li svg {
+    margin-bottom: 3px;
+}
+
+.sub-footer ul {
+    line-height: 22px;
+}
+
+.service-title a {
+    color: #1c3ed3 !important;
+}
+
+.footer-title a {
+    color: #ffffff;
+}
+
+.address-icon {
+    font-size: 16px;
+    background: #1c3ed3d1;
+    color: #ffffff;
+    float: left;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 8px;
+}
+
+.about-contact {
+    line-height: 30px;
+}
+
+.address-card {
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    color: #212529;
+    display: inline-block;
+    padding: 20px;
+    width: auto;
+    margin-top: 0;
+}
+
+.business-hours-card {
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    color: #212529;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.logo-mobile {
+    width: 33px;
+}
+
+.logo-mobile a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #1c3ed3;
+    background-color: #1c3ed3;
+    border-radius: 3px;
+}
+
+.logo-mobile a:hover {
+    text-decoration: none;
+}
+
+.logo-mobile a h4{
+    margin-bottom: 0;
+    font-family: "Lora", "Helvetica Neue", Arial, sans-serif, -apple-system;
+    color: #ffffff;
+    padding: 1px 3px;
+}
+
+.footer h3 a {
+    color: #ffffff;
+}
+
+.footer h3 a:hover {
+    text-decoration: none;
+}
+
+// .close {
+//     visibility: initial !important;
 // }
+
 
 @media
 only screen and (max-width: 760px),
 (min-device-width: 380px) and (max-device-width: 760px) {
+    .header {
+        height: 50px;
+    }
+
+    .main-menu-mobile ul li {
+        padding: 10px 0;
+    }
+
     .intro {
         padding-top: 275px;
     }
@@ -152,12 +319,43 @@ only screen and (max-width: 760px),
         padding-top: 100px;
         padding-bottom: 30px;
     }
-}
 
-@media
-only screen and (max-width: 680px),
-(min-device-width: 500px) and (max-device-width: 680px) {
-    .intro {
-        padding-top: 390px;
+    .address-card{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .address-card ul {
+        padding-left: 15px;
+    }
+
+    .footer ul li.copyright {
+        padding: 10px 8px 10px 0;
+    }
+
+    .footer ul {
+        margin-top: 8px;
     }
 }
+
+
+// @media
+// only screen and (min-width: 500px),
+// (min-device-width: 500px) and (max-device-width: 680px) {
+//     .intro {
+//         padding-top: 390px;
+//     }
+
+//     .intro-small {
+//         padding-top: 100px;
+//         padding-bottom: 30px;
+//     }
+// }
+
+// @media
+// only screen and (min-width: 368px),
+// (min-device-width: 368px) and (max-device-width: 680px) {
+//     .address-img{
+//         width: 8%;
+//     }
+// }
